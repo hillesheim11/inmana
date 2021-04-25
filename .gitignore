@@ -43,3 +43,4 @@
 .*
 !.gitignore
 !.formatter.exs
+!.credo.exs

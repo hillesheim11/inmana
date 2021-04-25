@@ -1,0 +1,16 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "Inmana",
+    "dateExported": "2021-04-25T19:16:16.531Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "restaurant_id",
+            "value": ""
+        },
+        {
+            "name": "supply_id",
+            "value": ""
+        }
+    ]
+}

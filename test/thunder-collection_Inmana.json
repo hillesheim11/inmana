@@ -1,0 +1,134 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Inmana",
+    "dateExported": "2021-04-25T19:14:10.015Z",
+    "version": "1.0",
+    "requests": [
+        {
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "486b212b-bd8f-41ea-b7ba-78d9d317f8ff",
+            "name": "Create User",
+            "url": "http://localhost:4000/api/restaurants",
+            "method": "POST",
+            "modified": "2021-04-25T18:48:24.090Z",
+            "created": "2021-04-25T18:06:14.368Z",
+            "_id": "1b5ddb69-d00c-4830-85c0-02d1bd438d3b",
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Lucas Hillesheim\",\n  \"email\": \"lucashilleshei@gmail.com\"\n}"
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.restaurant.id",
+                    "action": "setto",
+                    "value": "{{restaurant_id}}"
+                }
+            ]
+        },
+        {
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "486b212b-bd8f-41ea-b7ba-78d9d317f8ff",
+            "name": "Create Supply",
+            "url": "http://localhost:4000/api/supplies",
+            "method": "POST",
+            "modified": "2021-04-25T19:01:07.821Z",
+            "created": "2021-04-25T18:07:23.072Z",
+            "_id": "d42f7175-bd2a-467c-a340-e9abbc070e7e",
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"description\": \"Dozen eggs\",\n    \"expiration_date\": \"2021-06-30\",\n    \"responsible\": \"John Gueter\",\n    \"restaurant_id\": \"{{restaurant_id}}\"\n}"
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.supply.id",
+                    "action": "setto",
+                    "value": "{{supply_id}}"
+                }
+            ]
+        },
+        {
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "486b212b-bd8f-41ea-b7ba-78d9d317f8ff",
+            "name": "Get Supply",
+            "url": "http://localhost:4000/api/supplies/{{supply_id}}",
+            "method": "GET",
+            "modified": "2021-04-25T19:01:09.767Z",
+            "created": "2021-04-25T18:58:48.963Z",
+            "_id": "8e65c397-4276-4f51-aef6-d3757e75ec6e",
+            "tests": []
+        },
+        {
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "486b212b-bd8f-41ea-b7ba-78d9d317f8ff",
+            "name": "Welcome Message",
+            "url": "http://localhost:4000/api/?name=Lucas&age=26",
+            "method": "GET",
+            "modified": "2021-04-25T19:10:38.293Z",
+            "created": "2021-04-25T19:10:18.376Z",
+            "_id": "bdc149b9-a27c-461c-b9c8-79c7557f8f7f",
+            "tests": []
+        },
+        {
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "486b212b-bd8f-41ea-b7ba-78d9d317f8ff",
+            "name": "Get Emails Sent",
+            "url": "http://localhost:4000/sent_emails",
+            "method": "GET",
+            "modified": "2021-04-25T19:12:51.767Z",
+            "created": "2021-04-25T19:11:41.919Z",
+            "_id": "6578c1e3-014b-4519-8649-7857c61ddb46",
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Carol\", \n    \"age\": \"26\"\n}"
+            },
+            "tests": []
+        }
+    ]
+}

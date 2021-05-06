@@ -10,6 +10,8 @@
       * [Send expiration notifications](#send-expiration-notifications)
       * [Sent emails viewer](#sent-emails-viewer)
    * [Tests](#tests)
+   * [Technologies](#technologies)
+   * [Author](#author)
 <!--te-->
 
 ## About
@@ -144,7 +146,7 @@ Error
 ```
 ### Send expiration notifications
 
-This is the real motive the application exists. By default, after the server is running, it will send to every email registered, a notification with their supplies expiration date. This is schedule to happen every 7 days. *You can access [this file](lib/inmana/supplies/scheduler.ex) and change the interval if you want.
+This is the real motive the application exists. By default, after the server is running, it will send to every restaurant, a notification with their supplies expiration date that will expire in the current week. This is scheduled to happen every 7 days. *You can access [this file](lib/inmana/supplies/scheduler.ex) and change the interval if you want.
 
 ### Sent emails viewer
 
@@ -159,4 +161,26 @@ After sent
 
 ## Tests
 
-It was created 19 tests to this API. Run it with `mix test`.
+It was created 19 tests to this API. Run it with `mix test` on the terminal.
+
+## Technologies
+
+The tools below was used in this project
+- [Elixir](https://elixir-lang.org)
+- [Phoenix](https://www.phoenixframework.org)
+- [Bamboo](https://github.com/thoughtbot/bamboo)
+- [ExCoveralls](https://github.com/parroty/excoveralls)
+
+## Author
+
+<div>
+ <img src="https://avatars.githubusercontent.com/u/62484542?v=50" width="100px"/>
+</div>
+<div>
+ <sub><b>Lucas Hillesheim</b></sub>
+</div>
+
+Done with ❤️ by Lucas Hillesheim 👋🏽 Contact!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Lucas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lucas-hillesheim/)](https://www.linkedin.com/in/lucas-hillesheim/) 
+[![Gmail Badge](https://img.shields.io/badge/-lucashillesheim11@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lucashillesheim11@gmail.com)](mailto:lucashillesheim11@gmail.com)

@@ -1,8 +1,8 @@
-# 📖 Inmana ![GitHub](https://img.shields.io/github/license/hillesheim11/inmana?style=plastic)
+# 🎗️ Inmana ![GitHub](https://img.shields.io/github/license/hillesheim11/inmana?style=plastic)
 
 <!--ts-->
    * [About](#-about)
-   * [Environment settings](#-environmen-settings)
+   * [Environment settings](#-environment-settings)
    * [Installation](#-installation)
    * [Usage](#-usage)
       * [Create users](#-create-users)
@@ -15,12 +15,12 @@
    * [Author](#-author)
 <!--te-->
 
-# 🎗️ About
+# 📖 About
 Loss prevention with intelligent expiration date management.
 
 This project was created during the [Next Level Week](https://nextlevelweek.com) 5th edition.
 
-# 🖥️ Environment settings
+# 💻 Environment settings
 To run the application install [Elixir and Earlang](https://elixir-lang.org/install.html#install), [Phoenix](https://hexdocs.pm/phoenix/installation.html#phoenix) and [Postgres](https://www.postgresql.org/download/).
 
 # 📦 Installation
@@ -39,9 +39,9 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000/dashboard`](http://localhost:4000) from your browser, for phoenix information.
 
-# :hammer: Usage
+# 🔨 Usage
 
-## :woman::man: Create users
+## 👩👨 Create users
 First, to use de API correctly, you need to create a user/restaurant. To do this, we'll pass the user's name and email to the following route, http://<a></a>localhost:4000/api/restaurants.
 ```bash
 curl -i -X POST -H "Content-Type: application/json" \
@@ -145,7 +145,7 @@ Error
   "message":"Supply not found"
 } 
 ```
-## :incoming_envelope: Send expiration notifications
+## 📨 Send expiration notifications
 
 This is the real motive the application exists. By default, after the server is running, it will send to every restaurant, a notification with their supplies expiration date that will expire in the current week. This is scheduled to happen every 7 days. *You can access [this file](lib/inmana/supplies/scheduler.ex) and change the interval if you want.
 

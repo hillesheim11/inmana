@@ -1,28 +1,29 @@
-# 🔗 Inmana
+# 📖 Inmana ![GitHub](https://img.shields.io/github/license/hillesheim11/inmana?style=plastic)
+
 <!--ts-->
-   * [About](#about)
-   * [Environment settings](#environment-settings)
-   * [Installation](#installation)
-   * [Usage](#usage)
-      * [Create users](#create-users)
-      * [Create supplies](#create-supplies)
-      * [Show supplies](#show-supplies)
-      * [Send expiration notifications](#send-expiration-notifications)
-      * [Sent emails viewer](#sent-emails-viewer)
-   * [Tests](#tests)
-   * [Technologies](#technologies)
-   * [Author](#author)
+   * [About](#-about)
+   * [Environment settings](#-environmen-settings)
+   * [Installation](#-installation)
+   * [Usage](#-usage)
+      * [Create users](#-create-users)
+      * [Create supplies](#-create-supplies)
+      * [Show supplies](#-show-supplies)
+      * [Send expiration notifications](#-send-expiration-notifications)
+      * [Sent emails viewer](#-sent-emails-viewer)
+   * [Tests](#-tests)
+   * [Technologies](#-technologies)
+   * [Author](#-author)
 <!--te-->
 
-## About
+# 🎗️ About
 Loss prevention with intelligent expiration date management.
 
 This project was created during the [Next Level Week](https://nextlevelweek.com) 5th edition.
 
-## Environment settings
+# 🖥️ Environment settings
 To run the application install [Elixir and Earlang](https://elixir-lang.org/install.html#install), [Phoenix](https://hexdocs.pm/phoenix/installation.html#phoenix) and [Postgres](https://www.postgresql.org/download/).
 
-## Installation
+# 📦 Installation
 Get the repository:
 
 ```bash
@@ -38,9 +39,9 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000/dashboard`](http://localhost:4000) from your browser, for phoenix information.
 
-## Usage
+# :hammer: Usage
 
-### Create users
+## :woman::man: Create users
 First, to use de API correctly, you need to create a user/restaurant. To do this, we'll pass the user's name and email to the following route, http://<a></a>localhost:4000/api/restaurants.
 ```bash
 curl -i -X POST -H "Content-Type: application/json" \
@@ -74,7 +75,7 @@ If the email already exists in your database, you may see the following response
 ```
 Now we can create and add a supply to the restaurant.
 
-### Create supplies
+## 🥪 Create supplies
 If you already created a restaurant, we now may create a supply to the restaurant. With the id created in the route before, we will pass to the supply's route the description, expiration date and who is responsible.
 ```bash
 curl -i -X POST -H "Content-Type: application/json" -d \
@@ -116,7 +117,7 @@ Response error
 ```
 Let's know see the supply added
 
-### Show supplies
+## 🍩 Show supplies
 After you insert a supply, you can list that supply informing the id in the route below
 ```bash
 curl -i -X GET -H "Content-Type: application/json" \
@@ -144,11 +145,11 @@ Error
   "message":"Supply not found"
 } 
 ```
-### Send expiration notifications
+## :incoming_envelope: Send expiration notifications
 
 This is the real motive the application exists. By default, after the server is running, it will send to every restaurant, a notification with their supplies expiration date that will expire in the current week. This is scheduled to happen every 7 days. *You can access [this file](lib/inmana/supplies/scheduler.ex) and change the interval if you want.
 
-### Sent emails viewer
+## 📃 Sent emails viewer
 
 Accessing the route http://localhost:4000/sent_emails, you may see the page below. Every time the e-mails is sent,  you can reload the page, an see the e-mail's informations.
 </br>
@@ -159,11 +160,11 @@ Before send
 After sent
 ![image](https://user-images.githubusercontent.com/62484542/116950399-46842980-ac5b-11eb-86da-8853a85f1903.png)
 
-## Tests
+# 👩‍🔬 Tests
 
 It was created 19 tests to this API. Run it with `mix test` on the terminal.
 
-## Technologies
+# 🛸 Technologies
 
 The tools below was used in this project
 - [Elixir](https://elixir-lang.org)
@@ -171,7 +172,7 @@ The tools below was used in this project
 - [Bamboo](https://github.com/thoughtbot/bamboo)
 - [ExCoveralls](https://github.com/parroty/excoveralls)
 
-## Author
+# 🧑‍💻 Author
 
 <div>
  <img src="https://avatars.githubusercontent.com/u/62484542?v=50" width="100px"/>
